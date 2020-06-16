@@ -1,29 +1,29 @@
 "use strict";
-var hello = 'hello';
+let hello = 'hello';
 console.log(hello);
 function add(a, b) {
     return a + b;
 }
-var hasValue = true;
-var count = 20;
+let hasValue = true;
+let count = 20;
 console.log(hasValue);
 if (hasValue === true) {
     console.log('hoge');
 }
-var person = {
+const person = {
     name: 'Masahiro',
     age: 23
 };
 console.log(person.name);
-var masahiro = {
+let masahiro = {
     'first': 'Morinaga',
     'last': 'Masahiro'
 };
 console.log(masahiro);
-var fruits = ['Apple', 'Bannana', 'Grape'];
+const fruits = ['Apple', 'Bannana', 'Grape'];
 fruits.push('Melon');
 console.log(fruits);
-var book = ['business', 1500, false];
+const book = ['business', 1500, false];
 var coffeSize;
 (function (coffeSize) {
     coffeSize["SHORT"] = "SHORT";
@@ -31,17 +31,17 @@ var coffeSize;
     coffeSize["GRANDE"] = "GRANDE";
     coffeSize["VENTI"] = "VENTI";
 })(coffeSize || (coffeSize = {}));
-var coffee = {
+const coffee = {
     hot: true,
     size: coffeSize.TALL
 };
 //unionタイプ
-var unionType = 10;
+let unionType = 10;
 unionType = 'hello';
-var unionTypes = ['hello', 23, 'acnosc'];
-var apple = 'apple';
-var clothSize = 'large';
-var cloth = {
+let unionTypes = ['hello', 23, 'acnosc'];
+const apple = 'apple';
+let clothSize = 'large';
+const cloth = {
     color: 'white',
     size: clothSize
 };
@@ -53,20 +53,20 @@ function sayHello() {
     console.log('Hello');
 }
 console.log(sayHello());
-var anotherAdd = add;
-var doubleNumber = function (num) { return num * 2; };
+const anotherAdd = add;
+const doubleNumber = num => num * 2;
 //callback関数の型
 function doubleAndHandle(num, cb) {
-    var doubleNum = cb(num * 2);
+    const doubleNum = cb(num * 2);
     console.log(doubleNum);
 }
-doubleAndHandle(2, function (doubleNum) {
+doubleAndHandle(2, doubleNum => {
     return doubleNum;
 });
 //unknon型　←any型よりも少し厳しいもの
-var unknonInput;
-var anyInput;
-var text;
+let unknonInput;
+let anyInput;
+let text;
 unknonInput = 'hello';
 unknonInput = 21;
 unknonInput = true;
