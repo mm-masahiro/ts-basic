@@ -1,0 +1,24 @@
+{
+  "name": "ts-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^3.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mm-masahiro/ts-basic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mm-masahiro/ts-basic/issues"
+  },
+  "homepage": "https://github.com/mm-masahiro/ts-basic#readme"
+}
